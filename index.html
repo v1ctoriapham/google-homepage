@@ -2,9 +2,32 @@
 <html>
     <head>
     <style>
-        p {
-            color: black;
-            font: Arial;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            display: inline;
+            padding-inline-start: 10px;
+            padding-top: 10px;
+            font-family: Arial;
+            font-size:14px;
+            color: rgb(65, 65, 65)
+        }
+        .left-navigation {
+            font-size: 14px;
+            color:rgb(65, 65, 65)
+        }
+        .right-navigation {
+            float: right;
+            font-size: 14px;
+            color: rgb(43, 43, 43);
+        }
+        .search-bar {
+            border-style: transparent;
+            border-radius: 30px;
+            width:350px;
         }
         .search-buttons 
         {
@@ -12,14 +35,24 @@
             border: none;
             border-radius: 2px;
             padding: 10px 12px 10px 12px;
+            margin: 250px 0px 100px 0px;
+            color:rgb(43, 43, 43)
             
         }
-        
+        .logo {
+            position: absolute;
+            padding: 100px 0px 0px 850px;
+            width: 300px;
+        }
     </style>
         <body>
-            <p1>About</p1>
-            <p2>Store</p2>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <ul>
+                <li class="left-navigation">About</a></li>
+                <li class="left-navigation">Store</a></li>
+                <li class="right-navigation">Images</a></li>
+                <li class="right-navigation">Gmail</a></li>
+            </ul>
+            <img class="logo" src="https://cdn.vox-cdn.com/thumbor/HqBAiwc9uD1sHBw2Uvac03pCXKE=/0x0:2012x1341/1400x1050/filters:focal(0x0:2012x1341):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg">
             <button class="search-buttons">Google Search </button>
             <button class="search-buttons">I'm Feeling Lucky</button>
         </body>
