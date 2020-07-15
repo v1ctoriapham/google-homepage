@@ -24,10 +24,13 @@
             font-size: 14px;
             color: rgb(43, 43, 43);
         }
-        .search-bar {
-            border-style: transparent;
-            border-radius: 30px;
-            width:350px;
+        .logo {
+            position: relative;
+            margin-top: 100px;
+            width: 300px;
+            left: 50%;
+            margin-left: -160px;
+
         }
         .search-buttons 
         {
@@ -36,13 +39,22 @@
             border-radius: 2px;
             padding: 10px 12px 10px 12px;
             margin: 250px 0px 100px 0px;
-            color:rgb(43, 43, 43)
+            color:rgb(43, 43, 43);
             
         }
-        .logo {
-            position: absolute;
-            padding: 100px 0px 0px 850px;
-            width: 300px;
+        .input {
+            position: relative;
+            left:50%;
+            margin-left:-210px;
+            margin-bottom: 500px;
+            box-sizing: border-box;
+            border-width: 1px;
+            border-radius: 40px;
+            border-style:solid;
+            border-color:rgb(163, 163, 163);
+            width: 400px;
+            height: 35px;
+            box-shadow:0 0 5px 5px rgba(143, 143, 143, 0.06);
         }
     </style>
         <body>
@@ -52,9 +64,14 @@
                 <li class="right-navigation">Images</a></li>
                 <li class="right-navigation">Gmail</a></li>
             </ul>
+        <div>
             <img class="logo" src="https://cdn.vox-cdn.com/thumbor/HqBAiwc9uD1sHBw2Uvac03pCXKE=/0x0:2012x1341/1400x1050/filters:focal(0x0:2012x1341):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg">
+            <form action= "/search">
+                <input type="text" class="input">
+            </form>
             <button class="search-buttons">Google Search </button>
             <button class="search-buttons">I'm Feeling Lucky</button>
+        </div>
         </body>
     </head>
 </html>
