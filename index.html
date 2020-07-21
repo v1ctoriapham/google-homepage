@@ -2,19 +2,7 @@
 <html>
     <head>
     <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        li {
-            display: inline;
-            padding-inline-start: 10px;
-            padding-top: 10px;
-            font-family: Arial;
-            font-size:14px;
-            color: rgb(65, 65, 65)
-        }
+       
         .left-navigation {
             font-size: 14px;
             color:rgb(65, 65, 65)
@@ -58,21 +46,36 @@
             height: 35px;   
             box-shadow:0 0 5px 5px rgba(143, 143, 143, 0.06);
         }
-        .left-side-footer {
-            position:absolute;
-            bottom: 10px;
+        ul {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            right: 0px;
+        }
+        li {
+            display: inline;
+            padding-inline-start: 20px;
+            padding-top: 0px;
+            line-height: 35px;
+            font-family: Arial;
+            font-size:12.5px;
+            color: rgb(110, 110, 110)
+        }
+        .footer {
+            position: fixed;
             width: 100%;
-            height: 25px;
-            background-color: rgba(202, 202, 202, 0.06);
-            border-style: solid;
-            border-top-color:rgb(179, 179, 179);
-            border-bottom: none;
-            border-left: none;
+            bottom: 0px;
+            height: 35px;
+            background-color:rgb(247, 244, 244);
             border-width: 1px;
-            vertical-align: -30px;
-
-            
-
+            border-style: solid;
+            border-top-color:rgb(235, 235, 235);  
+            border-left:none;
+            border-bottom:none;
+        }
+        .right-footer {
+            float: right;
+            margin-right: 20px;
         }
     </style>
         <body>
@@ -90,13 +93,13 @@
             <button class="search-buttons">Google Search </button>
             <button class="search-buttons">I'm Feeling Lucky</button>
         </div>
-        <ul class="left-side-footer">
+        <ul class="footer">
             <li> Advertising</a></li>
             <li> Business</a></li>
             <li> How Search Works</a></li>
-            <li class="right-footer"> Privacy</a></li>
-            <li class="right-footer"> Terms</a></li>
             <li class="right-footer"> Settings</a></li>
+            <li class="right-footer"> Terms</a></li>
+            <li class="right-footer"> Privacy</a></li>
         </ul>
         </body>
     </head>
